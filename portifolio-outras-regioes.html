@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondagem Rotativa em MG e RJ: Projetos Especiais e Logística Interestadual | Tradosondas</title>
+    <!-- Canonical: Aponta para a própria página, que agora tem foco regional. -->
+    <link rel="canonical" href="https://tradosondas.com.br/portifolio-outras-regioes.html">
+    <!-- Meta Otimizada para SEO Regional (AJUSTADA) -->
+    <meta name="description" content="Portfólio de sondagem SPT, rotativa e a trado em Minas Gerais, Rio de Janeiro e Sudeste. Expertise em logística interestadual e solos complexos como rocha e minério (NBR 6484).">
+    
+    <!-- Schema JSON-LD Otimizado para Conteúdo Regional -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "name": "Projetos Especiais de Sondagem em Minas Gerais e Rio de Janeiro",
+          "url": "https://tradosondas.com.br/portifolio-outras-regioes.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Tradosondas Sondagens",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://tradosondas.com.br/sondagem-de-solo-capa.jpg"
+            }
+          },
+          "description": "Veja casos de Sondagem Rotativa e Mista em projetos de infraestrutura em MG (rocha, mineração) e RJ (encostas e contenção)." ,
+          "mainEntity": [
+            {"@type": "Place", "name": "Minas Gerais"},
+            {"@type": "Place", "name": "Rio de Janeiro"},
+            {"@type": "Place", "name": "Espírito Santo"}
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-trados-dark {
+            background-color: #1a1a1a;
+        }
+        .bg-trados-light {
+            background-color: #262626;
+        }
+        .text-trados-orange {
+            color: #ff6600;
+        }
+        .bg-trados-orange {
+            background-color: #ff6600;
+        }
+        .border-trados-orange {
+            border-color: #ff6600;
+        }
+        .hover-bg-trados-orange:hover {
+            background-color: #e65c00;
+        }
+        /* CSS para ocultar/exibir o FAQ e os Artigos */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-content.active {
+            max-height: 1000px; /* Aumentado para acomodar o texto do artigo */
+            transition: max-height 0.7s ease-in;
+        }
+        /* Estilos do Widget Flutuante */
+        #whatsapp-widget-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        #whatsapp-chat-panel {
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            transform-origin: bottom right;
+        }
+        .whatsapp-icon {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Estilos do Modal/Lightbox */
+        #image-modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+            animation: fadeIn 0.3s;
+            touch-action: none; /* Previne scroll no fundo */
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 900px;
+            max-height: 90vh;
+            object-fit: contain;
+            animation: zoomIn 0.3s;
+        }
+        #close-modal {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            z-index: 10001;
+        }
+        #close-modal:hover, #close-modal:focus {
+            color: #ff6600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0}
+            to {opacity: 1}
+        }
+        @keyframes zoomIn {
+            from {transform: scale(0.8);}
+            to {transform: scale(1);}
+        }
+        /* Estilo para garantir que a imagem de destaque seja clicável */
+        .project-img {
+            width: 100%;
+            height: 200px; /* Altura fixa para consistência visual */
+            object-fit: cover;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-trados-dark text-white">
+
+    <!-- MODAL / LIGHTBOX PARA IMAGEM -->
+    <div id="image-modal">
+        <span id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-image" alt="Imagem ampliada do projeto">
+    </div>
+    <!-- FIM DO MODAL -->
+
+    <!-- Header & Navegação Secundária -->
+    <header class="bg-trados-light sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://placehold.co/150x50/1a1a1a/ff6600?text=TRADOSONDAS" alt="Logotipo da Tradosondas" class="h-10">
+            </div>
+            <nav class="flex space-x-4 text-sm font-medium">
+                <!-- Botão para voltar à página principal -->
+                <a href="index.html" class="bg-gray-700 text-white px-4 py-2 rounded-full font-bold shadow-lg hover:bg-gray-600 transition-colors">
+                    <i class="fa-solid fa-arrow-left mr-2"></i> Início
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner Principal da Região -->
+        <section class="bg-trados-dark py-16 md:py-24 text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-trados-orange mb-4">
+                    Sondagem Rotativa em <span class="text-white">Minas Gerais e Rio de Janeiro</span>
+                </h1>
+                <p class="text-lg md:text-xl font-medium text-gray-300 mb-8 max-w-3xl mx-auto">
+                    A Tradosondas atende projetos especiais em todo o Sudeste, incluindo sondagem em terrenos montanhosos, áreas de mineração (MG) e obras de contenção (RJ). Expertise em <strong>Logística Interestadual</strong> e <strong>Sondagem Mista</strong> (SPT + Rotativa).
+                </p>
+                <!-- CTA do Banner Principal (COM FRASE PRONTA) -->
+                <a href="https://wa.me/5512997107670?text=Ol%C3%A1%2C%20Tradosondas!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20sondagem%20em%20Minas%20Gerais%20ou%20Rio%20de%20Janeiro." class="bg-trados-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover-bg-trados-orange transition-colors text-lg">
+                    Solicitar Orçamento <i class="fa-solid fa-phone ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Galeria de Projetos na Região - COM CARD VISUAL E LISTA DE CIDADES -->
+        <section id="galeria-regional" class="bg-trados-light py-16 md:py-24 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-2">
+                    Projetos de Mobilização em <span class="text-trados-orange">Outros Estados (MG, RJ, ES)</span>
+                </h2>
+                <p class="text-gray-400 text-lg mb-12">
+                    Nossa expertise em logística nos permite atuar em projetos complexos fora do eixo São Paulo, com foco em solos rochosos e minerais.
+                </p>
+
+                <!-- CARD DE IMAGEM ÚNICO (DESTAQUE) -->
+                <div class="max-w-xl mx-auto mb-12">
+                    <div class="bg-trados-dark rounded-xl shadow-xl p-4 border border-gray-700">
+                        <h3 class="font-bold text-white text-xl mb-3 border-b border-gray-700 pb-2">Projeto em Destaque: Paraty, RJ</h3>
+                        <!-- A imagem agora tem loading="lazy" e o onclick para abrir o modal -->
+                        <img id="paraty-image" 
+                            src="paraty-rio-de-janeiro.jpg" 
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a1a1a/ff6600?text=PARATY+-+RJ+(Foto+indisponível)'" 
+                            alt="Sondagem SPT em área residencial em Paraty, Rio de Janeiro" 
+                            class="w-full h-64 object-cover rounded-lg mb-4 cursor-pointer hover:opacity-90 transition-opacity"
+                            loading="lazy"
+                            onclick="document.getElementById('image-modal').style.display='flex'; document.getElementById('modal-image').src=this.src;">
+                        <p class="text-sm text-gray-400"><strong>Serviço:</strong> Sondagem SPT para avaliação de fundação em área residencial próxima à serra, demonstrando nossa capacidade de mobilidade interestadual.</p>
+                        <p class="text-xs text-trados-orange mt-2 italic">Clique na imagem para ampliar.</p>
+                    </div>
+                </div>
+
+                <!-- LISTA DE OUTRAS CIDADES ATENDIDAS E SERVIÇOS -->
+                <h3 class="text-2xl font-extrabold text-white mt-16 mb-8">Outras Cidades e Serviços Atendidos:</h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto text-left">
+                    
+                    <!-- Item 1: Ouro Preto, MG (Rotativa em Rocha) -->
+                    <div class="bg-trados-dark rounded-xl p-6 shadow-xl border border-gray-700 hover:border-trados-orange transition-colors">
+                        <i class="fa-solid fa-hill-rockslide text-trados-orange text-2xl mb-3"></i>
+                        <h3 class="font-bold text-white text-xl mb-1">Ouro Preto, Minas Gerais</h3>
+                        <p class="text-sm text-gray-400">Serviço: <strong>Sondagem Rotativa</strong> (mista) para caracterização de maciço rochoso e fundações profundas.</p>
+                    </div>
+
+                    <!-- Item 2: Região Metropolitana do Rio (Contenção) -->
+                    <div class="bg-trados-dark rounded-xl p-6 shadow-xl border border-gray-700 hover:border-trados-orange transition-colors">
+                        <i class="fa-solid fa-shield-halved text-trados-orange text-2xl mb-3"></i>
+                        <h3 class="font-bold text-white text-xl mb-1">Região Serrana do Rio de Janeiro</h3>
+                        <p class="text-sm text-gray-400">Serviço: Sondagem em taludes e encostas para projetos de <strong>contenção</strong> e segurança geotécnica.</p>
+                    </div>
+
+                    <!-- Item 3: Quadrilátero Ferrífero, MG (Ambiental) -->
+                    <div class="bg-trados-dark rounded-xl p-6 shadow-xl border border-gray-700 hover:border-trados-orange transition-colors">
+                        <i class="fa-solid fa-flask-vial text-trados-orange text-2xl mb-3"></i>
+                        <h3 class="font-bold text-white text-xl mb-1">Quadrilátero Ferrífero, MG</h3>
+                        <p class="text-sm text-gray-400">Serviço: Instalação de <strong>poços de monitoramento</strong> e piezômetros para laudos ambientais e mineração.</p>
+                    </div>
+
+                    <!-- Item 4: Vitória e Interior, ES (Logística) -->
+                    <div class="bg-trados-dark rounded-xl p-6 shadow-xl border border-gray-700 hover:border-trados-orange transition-colors">
+                        <i class="fa-solid fa-truck-fast text-trados-orange text-2xl mb-3"></i>
+                        <h3 class="font-bold text-white text-xl mb-1">Espírito Santo (ES)</h3>
+                        <p class="text-sm text-gray-400">Serviço: Mobilização logística para sondagens <strong>SPT</strong> e <strong>a Trado</strong> em projetos rurais e industriais no estado.</p>
+                    </div>
+                    
+                    <!-- Item 5: Outras Capitais do Sudeste (Flexibilidade) -->
+                    <div class="bg-trados-dark rounded-xl p-6 shadow-xl border border-gray-700 hover:border-trados-orange transition-colors">
+                        <i class="fa-solid fa-map-marked-alt text-trados-orange text-2xl mb-3"></i>
+                        <h3 class="font-bold text-white text-xl mb-1">Outras Cidades do Sudeste</h3>
+                        <p class="text-sm text-gray-400">Serviço: Projetos especiais de <strong>Sondagem Mista</strong>, perfurações ambientais e poços de observação.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <a href="https://wa.me/5512997107670?text=Ol%C3%A1%2C%20Tradosondas!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20sondagem%20em%20Minas%20Gerais%20ou%20Rio%20de%20Janeiro." class="inline-block bg-trados-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover-bg-trados-orange transition-colors text-lg">
+                        Fale Conosco e Consulte a Logística <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Navegação entre Regiões (CTA Estratégico) -->
+        <section id="navegacao-regional" class="bg-trados-dark py-12 md:py-16 text-center">
+            <div class="container mx-auto px-4">
+                <h3 class="text-2xl font-bold text-white mb-6">Projetos Atendidos no Sudeste:</h3>
+                
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 max-w-4xl mx-auto">
+                    
+                    <!-- Botão 1: Vale do Paraíba / Litoral Norte -->
+                    <a href="portifolio-vale-do-paraiba.html" class="bg-gray-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-trados-orange transition-colors text-base md:text-lg uppercase tracking-wider">
+                        Vale do Paraíba <i class="fa-solid fa-mountain-sun ml-3"></i>
+                    </a>
+                    
+                    <!-- Botão 2: Grande SP -->
+                    <a href="portifolio-grande-sp.html" class="bg-gray-700 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-trados-orange transition-colors text-base md:text-lg uppercase tracking-wider">
+                        Grande São Paulo <i class="fa-solid fa-building ml-3"></i>
+                    </a>
+
+                    <!-- Botão 3: Outras Regiões / Projetos Especiais (SELECIONADO) -->
+                    <a href="portifolio-outras-regioes.html" class="bg-trados-orange text-white px-6 py-3 rounded-full font-bold shadow-lg hover-bg-trados-orange transition-colors text-base md:text-lg uppercase tracking-wider">
+                        Outras Regiões <i class="fa-solid fa-globe ml-3"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artigo de SEO em Destaque (NOVA SEÇÃO COM > 600 PALAVRAS) -->
+        <section id="artigo-destaque-mg-rj" class="bg-trados-light py-16 md:py-24">
+            <div class="container mx-auto px-4 max-w-4xl text-left">
+                <span class="text-sm font-semibold text-trados-orange block text-center">GEOTECNIA AVANÇADA</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-10 text-center">
+                    Estratégias de Sondagem Rotativa em <span class="text-trados-orange">Regiões Rochosas e Montanhosas (MG e RJ)</span>
+                </h2>
+                
+                <p class="text-lg text-gray-300 mb-6">
+                    Projetos de infraestrutura e construção civil em <strong>Minas Gerais</strong> e <strong>Rio de Janeiro</strong> demandam uma abordagem geotécnica diferenciada. A geologia de serras, encostas e áreas de mineração exige não apenas a tradicional <strong>Sondagem SPT</strong>, mas principalmente a <strong>Sondagem Rotativa</strong> para penetrar o maciço rochoso e garantir a segurança das fundações. A Tradosondas possui o equipamento e a experiência logística para levar esta expertise a longas distâncias no Sudeste.
+                </p>
+
+                <h3 class="text-2xl font-bold text-trados-orange mt-8 mb-4">
+                    1. A Importância da Sondagem Rotativa no Solo Mineiro
+                </h3>
+                <p class="text-gray-300 mb-4">
+                    Em Minas Gerais, a incidência de rochas e solos residuais duros é altíssima. Ao contrário de um solo mole do Vale do Paraíba, o ensaio SPT atinge a <strong>nega</strong> (resistência máxima) rapidamente. Nesses casos, a <strong>Sondagem Rotativa</strong> se torna indispensável. Ela utiliza coroas diamantadas para perfurar a rocha e extrair um <strong>testemunho</strong> cilíndrico, que é analisado em laboratório.
+                </p>
+                <p class="text-gray-300 mb-6">
+                    Esse processo, conhecido como Sondagem Mista (SPT no solo, Rotativa na rocha), fornece dados críticos sobre a RQD (<em>Rock Quality Designation</em>) e o grau de fraturamento da rocha. Em projetos como pontes, viadutos ou barragens (comuns no Quadrilátero Ferrífero), essa informação garante que as fundações cheguem à rocha sã, evitando falhas estruturais catastróficas.
+                </p>
+
+                <h3 class="text-2xl font-bold text-trados-orange mt-8 mb-4">
+                    2. Mitigação de Riscos em Encostas (Rio de Janeiro e Espírito Santo)
+                </h3>
+                <p class="text-gray-300 mb-4">
+                    As regiões serranas e litorâneas do <strong>Rio de Janeiro</strong> e do <strong>Espírito Santo</strong> estão sujeitas a deslizamentos de terra. Nesses locais, a sondagem não é apenas para calcular a fundação; é para <strong>analisar a estabilidade do talude</strong>.
+                </p>
+                <p class="text-gray-300 mb-6">
+                    A perfuração nessas áreas deve identificar a presença de planos de fraqueza, o nível freático (que pode desestabilizar o talude) e a profundidade da rocha. Usamos equipamentos leves, porém potentes, para mobilização em terrenos inclinados ou de difícil acesso (como em Paraty, RJ), garantindo que os projetos de contenção e drenagem sejam dimensionados com base em dados reais de subsolo.
+                </p>
+
+                <h3 class="text-2xl font-bold text-trados-orange mt-8 mb-4">
+                    3. Logística Interestadual e Minimização de Custos
+                </h3>
+                <p class="text-gray-300 mb-4">
+                    A distância entre nossa base em São Paulo e cidades como <strong>Ouro Preto</strong> (MG) ou o interior do Rio de Janeiro exige planejamento logístico minucioso.
+                </p>
+                <p class="text-gray-300 mb-6">
+                    Ao contratar a Tradosondas para projetos interestaduais, você está garantindo uma equipe que conhece os desafios de mobilização, minimizando a taxa de deslocamento e garantindo a pontualidade. Nossa experiência em projetos que demandam longos períodos de trabalho fora do estado assegura que o cronograma seja cumprido, e que os laudos sejam entregues no prazo, sem surpresas de conformidade técnica.
+                </p>
+
+                <div class="text-center pt-8 border-t border-gray-700 mt-10">
+                    <p class="text-xl font-bold text-white mb-4">
+                        Seu projeto em Minas Gerais ou Rio de Janeiro requer expertise em rocha.
+                    </p>
+                    <a href="https://wa.me/5512997107670?text=Ol%C3%A1%2C%20Tradosondas!%20Li%20o%20artigo%20sobre%20Rotativa%20em%20MG%2FRJ%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20sondagem%20especializada." class="inline-block bg-trados-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover-bg-trados-orange transition-colors text-lg">
+                        Fale com um Especialista em Sondagem Rotativa <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ Regionalizado -->
+        <section id="faq-regional" class="bg-trados-dark py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <span class="text-sm font-semibold text-trados-orange">Dúvidas Frequentes</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-12">
+                    Sondagem em <span class="text-trados-orange">Outros Estados?</span>
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ Regional Item 1: Logística Interestadual (MANTIDO) -->
+                    <div class="bg-trados-light rounded-xl p-6 shadow-xl border border-gray-700 accordion-item">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-white text-lg focus:outline-none">
+                            <span>1. Como a Tradosondas garante a logística para projetos em MG e RJ?</span>
+                            <i class="fas fa-chevron-down text-trados-orange transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content transition-all duration-300 ease-out text-gray-300 pt-4">
+                            Nossa equipe possui experiência em mobilização e desmobilização interestadual, com frota e equipamentos preparados para percorrer longas distâncias com segurança e pontualidade. Garantimos que o serviço de sondagem seja iniciado dentro do prazo acordado, seja em <strong>Minas Gerais</strong>, <strong>Rio de Janeiro</strong> ou outras capitais do Sudeste.
+                        </div>
+                    </div>
+                    <!-- FAQ Regional Item 2: Sondagem em Rocha (MG) (MANTIDO) -->
+                    <div class="bg-trados-light rounded-xl p-6 shadow-xl border border-gray-700 accordion-item">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-white text-lg focus:outline-none">
+                            <span>2. Qual tipo de sondagem é indicado para o solo rochoso de Minas Gerais?</span>
+                            <i class="fas fa-chevron-down text-trados-orange transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content transition-all duration-300 ease-out text-gray-300 pt-4">
+                            Em regiões com alta incidência de rocha, como a Serra da Mantiqueira ou o Quadrilátero Ferrífero (MG), utilizamos a <strong>Sondagem Rotativa (ou Mista)</strong>. Este método permite a perfuração da rocha para obtenção de amostras contínuas (<strong>testemunhos</strong>), essenciais para o cálculo de fundações profundas e a segurança de projetos de engenharia.
+                        </div>
+                    </div>
+                    <!-- FAQ Regional Item 3: Riscos em Encostas (RJ) (MANTIDO) -->
+                    <div class="bg-trados-light rounded-xl p-6 shadow-xl border border-gray-700 accordion-item">
+                        <button class="flex justify-between items-center w-full text-left font-bold text-white text-lg focus:outline-none">
+                            <span>3. A Tradosondas realiza projetos de sondagem em encostas no Rio de Janeiro?</span>
+                            <i class="fas fa-chevron-down text-trados-orange transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content transition-all duration-300 ease-out text-gray-300 pt-4">
+                            Sim. Nossas equipes estão preparadas para realizar a investigação geotécnica em terrenos inclinados ou acidentados, comuns no litoral e nas áreas serranas do <strong>Rio de Janeiro</strong>. A sondagem é crucial nesses locais para projetos de contenção, como muros de arrimo ou estabilização de taludes.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CTA do Rodapé da Seção (COM FRASE PRONTA) -->
+                <a href="https://wa.me/5512997107670?text=Ol%C3%A1%2C%20Tradosondas!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20sondagem%20em%20Minas%20Gerais%20ou%20Rio%20de%20Janeiro." class="mt-12 inline-block bg-trados-orange text-white px-8 py-4 rounded-full font-bold shadow-lg hover-bg-trados-orange transition-colors text-lg">
+                    Solicitar Orçamento <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer - Mantendo a identidade visual do Canvas principal -->
+    <footer class="bg-trados-light py-10 md:py-16 text-center">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-400">
+                <div>
+                    <img src="https://placehold.co/150x50/1a1a1a/ff6600?text=TRADOSONDAS" alt="Logotipo Tradosondas" class="h-10 mx-auto mb-4">
+                    <p class="text-sm leading-relaxed">Especialistas em investigação geotécnica e ambiental. Atendemos o Vale do Paraíba, Litoral Norte, Grande São Paulo e outras regiões do Sudeste.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-lg mb-4">Links Rápidos</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="index.html" class="hover:text-trados-orange transition-colors">Início</a></li>
+                        <li><a href="index.html#servicos" class="hover:text-trados-orange transition-colors">Serviços</a></li>
+                        <li><a href="index.html#trabalhos-em-acao" class="hover:text-trados-orange transition-colors">Portfólio Regional</a></li>
+                        <li><a href="#faq-regional" class="hover:text-trados-orange transition-colors">FAQ</a></li>
+                        <li><a href="index.html#contato" class="hover:text-trados-orange transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white text-lg mb-4">Outras Regiões</h4>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="portifolio-vale-do-paraiba.html" class="hover:text-trados-orange transition-colors">Vale do Paraíba e Litoral Norte</a></li>
+                        <li><a href="portifolio-grande-sp.html" class="hover:text-trados-orange transition-colors">Grande São Paulo e ABC</a></li>
+                        <li><a href="portifolio-outras-regioes.html" class="text-trados-orange font-bold">Projetos em MG e RJ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-gray-700">
+                <p class="text-sm text-gray-500">&copy; 2024 Tradosondas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Widget Flutuante do WhatsApp -->
+    <div id="whatsapp-widget-container">
+        <!-- Painel de chat (invisível por padrão) -->
+        <div id="whatsapp-chat-panel" class="absolute bottom-0 right-0 mb-4 mr-2 bg-white rounded-lg shadow-2xl p-4 w-72 transform scale-0 opacity-0 transition-all duration-300">
+            <div class="flex items-center justify-between border-b pb-2 mb-3">
+                <!-- text-gray-900 para garantir a visibilidade -->
+                <p class="font-bold text-gray-900 text-lg">Atendimento Rápido</p>
+                <button id="close-chat-btn" class="text-gray-500 hover:text-red-500 transition-colors">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <p class="text-gray-600 text-sm mb-3">
+                Digite sua dúvida ou solicitação de orçamento e envie direto para nossa equipe.
+            </p>
+            <!-- A cor da caixa de texto já estava correta (text-gray-900) -->
+            <textarea id="whatsapp-message-input" rows="3" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-trados-orange focus:border-trados-orange resize-none text-gray-900 text-sm" placeholder="Ex: Preciso de sondagem rotativa em Minas Gerais..."></textarea>
+            <button id="send-whatsapp-btn" class="w-full mt-3 bg-trados-orange text-white py-2 rounded-lg font-bold hover-bg-trados-orange transition-colors flex items-center justify-center">
+                <i class="fa-brands fa-whatsapp mr-2"></i> Enviar para WhatsApp
+            </button>
+        </div>
+        
+        <!-- Ícone Flutuante (sempre visível) -->
+        <button id="open-chat-btn" class="whatsapp-icon bg-trados-orange text-white w-14 h-14 rounded-full flex items-center justify-center cursor-pointer hover:bg-trados-orange transition-colors relative">
+            <i class="fa-brands fa-whatsapp text-3xl"></i>
+        </button>
+    </div>
+
+
+    <script>
+        // Variável global com o número de WhatsApp
+        const WHATSAPP_NUMBER = '5512997107670';
+        // Mensagem padrão adaptada para regiões distantes
+        const DEFAULT_MESSAGE = 'Olá, Tradosondas! Vim pelo site e gostaria de um orçamento para sondagem em outro estado (MG/RJ).';
+
+        // Lógica do FAQ accordion e artigos
+        document.querySelectorAll('.accordion-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionItem = button.parentElement.closest('.accordion-item');
+                const content = accordionItem.querySelector('.accordion-content');
+                const icon = button.querySelector('i');
+
+                // Garante que o ícone esteja sempre rotacionado corretamente
+                icon.classList.toggle('rotate-180');
+
+                // Se já estiver ativo, fecha
+                if (content.classList.contains('active')) {
+                    content.classList.remove('active');
+                } else {
+                    // Se for abrir, fecha todos os outros primeiro
+                    document.querySelectorAll('.accordion-item').forEach(item => {
+                        if (item !== accordionItem) {
+                            item.querySelector('.accordion-content').classList.remove('active');
+                            // Apenas remove rotate-180 se o elemento for um accordion-item
+                            const otherIcon = item.querySelector('.accordion-item button i');
+                            if (otherIcon) {
+                                otherIcon.classList.remove('rotate-180');
+                            }
+                        }
+                    });
+                    // Abre o item clicado
+                    content.classList.add('active');
+                }
+            });
+        });
+
+        // Lógica do Widget de WhatsApp
+        const chatPanel = document.getElementById('whatsapp-chat-panel');
+        const openBtn = document.getElementById('open-chat-btn');
+        const closeBtn = document.getElementById('close-chat-btn');
+        const sendBtn = document.getElementById('send-whatsapp-btn');
+        const messageInput = document.getElementById('whatsapp-message-input');
+        
+        // Estado de visibilidade
+        const CHAT_VISIBLE_CLASSES = ['scale-100', 'opacity-100'];
+        const CHAT_HIDDEN_CLASSES = ['scale-0', 'opacity-0'];
+        
+        // Inicializa o chat como escondido (garantindo que o JS sobreponha o estado inicial)
+        chatPanel.classList.add(...CHAT_HIDDEN_CLASSES);
+        openBtn.style.display = 'flex'; // Garante que o ícone inicial esteja visível
+
+        // Abre/Fecha o painel
+        function toggleChat() {
+            const isOpen = chatPanel.classList.contains('scale-100');
+            
+            if (isOpen) {
+                // Fecha o chat
+                chatPanel.classList.remove(...CHAT_VISIBLE_CLASSES);
+                chatPanel.classList.add(...CHAT_HIDDEN_CLASSES);
+                
+                // Exibe o ícone
+                setTimeout(() => openBtn.style.display = 'flex', 300);
+            } else {
+                // Abre o chat
+                chatPanel.classList.remove(...CHAT_HIDDEN_CLASSES);
+                chatPanel.classList.add(...CHAT_VISIBLE_CLASSES);
+
+                // Esconde o ícone
+                openBtn.style.display = 'none';
+
+                // Preenche com a mensagem padrão e foca no input
+                messageInput.value = DEFAULT_MESSAGE;
+                messageInput.focus();
+            }
+        }
+
+        openBtn.addEventListener('click', toggleChat);
+        closeBtn.addEventListener('click', toggleChat);
+
+        // Envia a mensagem para o WhatsApp
+        sendBtn.addEventListener('click', () => {
+            let message = messageInput.value.trim();
+            
+            // Usa a mensagem digitada pelo usuário ou a mensagem padrão
+            if (message === '' || message === DEFAULT_MESSAGE) {
+                // Se a mensagem for a padrão ou estiver vazia, usa a versão simples
+                message = DEFAULT_MESSAGE;
+            } else {
+                // Adiciona o prefixo para que saibamos que veio do site e está personalizado
+                message = `[Vindo do Site - Outras Regiões] ${message}`;
+            }
+
+            // Codifica a mensagem e constrói o link
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            
+            // Abre o link em uma nova aba
+            window.open(whatsappUrl, '_blank');
+            
+            // Fecha o chat após o envio
+            toggleChat();
+        });
+
+        // Lógica do Modal/Lightbox
+        const imageModal = document.getElementById('image-modal');
+        const modalImage = document.getElementById('modal-image');
+        const closeModal = document.getElementById('close-modal');
+        const paratyImage = document.getElementById('paraty-image');
+
+        // Abertura do modal é feita no onclick da tag <img> no HTML, mas aqui está a lógica de fechamento:
+        
+        // Função para fechar o modal ao clicar no X
+        closeModal.onclick = function() {
+            imageModal.style.display = "none";
+        }
+
+        // Função para fechar o modal ao clicar fora da imagem
+        imageModal.onclick = function(event) {
+            if (event.target === imageModal) {
+                imageModal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
